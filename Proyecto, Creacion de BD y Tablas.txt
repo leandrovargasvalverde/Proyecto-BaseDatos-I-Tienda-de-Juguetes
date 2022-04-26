@@ -1,0 +1,88 @@
+CREATE DATABASE db_TiendaJuguetes
+
+
+USE db_TiendaJuguetes
+GO
+
+--Creación de Tabla Clientes
+CREATE TABLE tblClientes(
+IdCliente INT NOT NULL,
+NombreCliente VARCHAR(100) NOT NULL,
+ApellidoCliente VARCHAR(100) NOT NULL,
+Cedula VARCHAR(100) NOT NULL,
+Correo VARCHAR(200) NOT NULL,
+Telefono VARCHAR (50) NOT NULL,
+Direccion VARCHAR(100) NOT NULL,
+
+CONSTRAINT PKtblClientes PRIMARY KEY(IdCliente)
+)
+
+--Creación de Tabla Articulos
+CREATE TABLE tblArticulos(
+IdProducto INT NOT NULL,
+Nombre VARCHAR(100) NOT NULL,
+Codigo VARCHAR(50) NOT NULL, 
+Descripcion VARCHAR(200) NOT NULL,
+Precio VARCHAR(200) NOT NULL,
+
+
+CONSTRAINT PKtblProductos PRIMARY KEY(IdProducto),
+CONSTRAINT UNQtblProductosCodigo UNIQUE(Codigo)
+)
+
+
+--Creación de Tabla Proveedores
+CREATE TABLE tblProveedores(
+IdProveedores INT NOT NULL,
+Nombre VARCHAR(100) NOT NULL,
+Direccion VARCHAR(50) NOT NULL, 
+Correo VARCHAR(200) NOT NULL,
+Telefono VARCHAR (50) NOT NULL,
+
+
+CONSTRAINT PKtblIdProveedores PRIMARY KEY(IdProveedores)
+)
+
+
+--Creación de Tabla Tipos
+CREATE TABLE tblTipos(
+IdCatalogo INT NOT NULL,
+Nombre VARCHAR(100) NOT NULL,
+Codigo VARCHAR(50) NOT NULL, 
+Descripcion VARCHAR(200) NOT NULL,
+MesPublicacion VARCHAR(50) NOT NULL,
+Año VARCHAR (50) NOT NULL
+
+CONSTRAINT PKtblCatalogos PRIMARY KEY(IdCatalogo),
+CONSTRAINT UNQtblCatalogosCodigo UNIQUE(Codigo)
+)
+
+
+-- Tabla Facturas
+CREATE TABLE tblFacturas(
+IdFactura INT NOT NULL,
+Mes VARCHAR(50) NOT NULL,
+Año VARCHAR(50) NOT NULL,
+Codigo VARCHAR(50) NOT NULL,
+IdCliente INT NOT NULL,
+SumaVenta VARCHAR (50)
+
+CONSTRAINT PKtblFacturas PRIMARY KEY(IdFactura),
+CONSTRAINT UNQtblFacturasCodigo UNIQUE(Codigo)
+)
+
+-- Tabla TarjetaRegalo
+CREATE TABLE tblPujas(
+IdTarjetaRegalo INT NOT NULL,
+FechaVencimiento VARCHAR(150) NOT NULL,
+Monto VARCHAR (50) NOT NULL,
+Nombredestinatario VARCHAR (50) NOT NULL,
+IdCliente INT NOT NULL
+
+CONSTRAINT PKtblIdTarjetaRegalo PRIMARY KEY(IdTarjetaRegalo)
+)
+-- Tablas intermedias---------------------------------------------------------------------------------------------------------------------------
+
+
+
+-- Llaves foraneas--------------------------------------------------- 
