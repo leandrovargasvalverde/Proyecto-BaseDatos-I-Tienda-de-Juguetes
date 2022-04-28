@@ -34,7 +34,27 @@ VALUES
 (19,'Juego De Mesa Clue','739983','El jugador debe resolver el misterio del asesinato haciendo preguntas y resolviendo pistas. Esta nueva versión contiene un nuevo tablero con un escenario moderno.','10990.',2,2),
 (20,'Rompecabezas Jumbo Perra Sophie En Jardín','032430','Sueño del paisaje es un rompecabezas de 500 piezas. Partes y piezas de rompecabezas excepcional colección ofrece originales e intrigantes regalos para cualquier interés, edad o capacidad.','9760',5,2),
 (21,'Rompecabezas Jumbo Mapamundi','306058','Aprender la ubicación, formas y los nombres de todos los continentes y grandes océanos 33 resistente, extragruesa (cartón) Superficie de fácil cuidado 24" L x 36" W montado. 6 + años.','7495',6,2),
-(22,'Juego de mesa 3 en 1 (ajedrez, dama y backgman)','306058','Juego de mesa 3 en 1 en el que se puede jugar ajedrez, damas y backgman.','8595',7,2)
+(22,'Juego de mesa 3 en 1 (ajedrez, dama y backgman)','306058','Juego de mesa 3 en 1 en el que se puede jugar ajedrez, damas y backgman.','8595',7,2),
+(23,'Utensilios de Cocina Tiempo de Té ','987356','Set de Utensilios de Cocina Tiempo de Té','8995',8,1),
+(24,'Cocina Tiempo de Cocción Real','345618','Set de Cocina Tiempo de Cocción Real','65995',8,1),
+(25,'Set de Utensilios de Cocina','845672','Set de Utensilios de Cocina','12495',8,1),
+(26,'Cocina Electrónica','295309','Set de Cocina Electrónica','36995',8,1),
+(27,'Mini Set de Cocina para Muñecas','456387','Mini Set de Cocina para Muñecas','12495',8,1),
+(28,'Cocina con Luz y Sonidos 33 Accesorios','906243','Set de Cocina con Luz y Sonidos 33 Accesorios','1774995',8,1),
+(29,'Set de Juego Sandwiches de Fieltro','788765','Set de Juego Sandwiches de Fieltro','14295',8,1),
+(30,'Cocina de Madera de Juguete','123443','Set de Cocina de Madera de Juguete','129995',8,1),
+(31,'Set de Accesorios de Cocina de Madera','655627','Set de Accesorios de Cocina de Madera','14495',8,1),
+(32,'Utensilios de Cocina Chef´s Collection','983219','Set de Utensilios de Cocina Chef´s Collection','14495',8,1),
+(33,'Batería con tambores para bebé con luces','977356','Batería con luces, 2 tambores y un platillo y 5 botones con melodías','8995',9,3),
+(34,'Trompeta para bebé con sonidos','123618','Trompeta con luces y 3 botones con melodías','7995',9,3),
+(35,'Tambor para bebé','840072','Primer tambor para bebé, de madera, con dos baquetas y dibujos llamativos','12495',9,3),
+(36,'Mesa de instrumentos musicales para bebé','200309','Mesa musical con platillo, tambor, xilófono con arco iris de notas de colores, rascador y engranajes','17495',9,3),
+(37,'Xilófono de madera para bebé','458787','Xilófono hecho 100% de madera con las teclas de colores','12495',9,3),
+(38,'Guitarra para bebé con luces','906288','Guitarra de estilo eléctrica con luces, 5 melodías y 3 cuerdas','8995',9,3),
+(39,'Piano con sonidos de animales de granja','788765','Piano de animalitos que se mueven y suenan, con melodías y teclas luminosas','20995',9,3),
+(40,'Tambor con luces y sonido','873443','Tambor con luces y sonido','15995',10,3),
+(41,'Gran orquesta musical','335627','Gran orquesta musical con gran variedad de instrumentos','14495',10,3),
+(42,'Set de tambor y platillo','123219','Set de tambor y platillo','24495',10,3)
 
 SELECT * FROM tblArticulos
 
@@ -47,3 +67,8 @@ SELECT * FROM tblArticulos
 6 MELLISSA & DOUGH
 7 Foster
 */
+/*8.MARCA DE JUEGOS DE COCINA TOYS 
+  9.MARCA JUEGOS MUSICALES IMAGINARUM
+  10.MARCA JUEGOS MUSICALES EUREKAKIDS
+*/
+
