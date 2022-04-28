@@ -1,6 +1,5 @@
 --CREATE DATABASE db_TiendaJuguetes
 
-
 USE db_TiendaJuguetes
 GO
 
@@ -22,7 +21,7 @@ CREATE TABLE tblArticulos(
 IdArticulo INT NOT NULL,
 NombreArt VARCHAR(100) NOT NULL,
 Codigo VARCHAR(50) NOT NULL, 
-Descripcion VARCHAR(200) NOT NULL,
+Descripcion VARCHAR(500) NOT NULL,
 Precio VARCHAR(200) NOT NULL,
 IdProveedor INT NOT NULL,
 IdTipo INT NOT NULL
