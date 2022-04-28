@@ -72,7 +72,7 @@ SELECT * FROM tblArticulos
 30 Harrows Darts
 31 Vtech
 32 Baby Clementoni
-33 Pioner 
+33 Pioneer 
 */
 
 
