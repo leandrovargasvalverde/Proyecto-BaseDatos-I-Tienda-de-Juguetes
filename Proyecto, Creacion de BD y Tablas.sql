@@ -21,7 +21,7 @@ CREATE TABLE tblArticulos(
 IdArticulo INT NOT NULL,
 NombreArt VARCHAR(100) NOT NULL,
 Codigo VARCHAR(50) NOT NULL, 
-Descripcion VARCHAR(500) NOT NULL,
+Descripcion VARCHAR(MAX) NOT NULL,
 Precio VARCHAR(200) NOT NULL,
 IdProveedor INT NOT NULL,
 IdTipo INT NOT NULL
@@ -35,7 +35,7 @@ CREATE TABLE tblProveedores(
 IdProveedor INT NOT NULL,
 Nombre VARCHAR(100) NOT NULL,
 CedulaJuridica VARCHAR (100) NOT NULL,
-Direccion VARCHAR(50) NOT NULL, 
+Direccion VARCHAR(200) NOT NULL, 
 Correo VARCHAR(200) NOT NULL,
 Telefono VARCHAR (50) NOT NULL
 
