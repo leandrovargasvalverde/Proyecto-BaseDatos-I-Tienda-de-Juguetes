@@ -67,3 +67,13 @@ VALUES
 (50,'01/2024','40000','Sebastián Chaves Cordero',50)
 
 SELECT * FROM tblTarjetaRegalo
+
+INSERT INTO tblTarjetaRegalo(
+			IdTarjetaRegalo,
+			FechaVencimiento,
+			Monto,
+			Nombredestinatario,
+			IdCliente)
+
+VALUES
+(51,'01/2024','3795','Sebastián Chaves Cordero',51)

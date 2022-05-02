@@ -76,14 +76,13 @@ CONSTRAINT UNQtblFacturasCodigo UNIQUE(Codigo)
 CREATE TABLE tblTarjetaRegalo(
 IdTarjetaRegalo INT NOT NULL,
 FechaVencimiento VARCHAR(150) NOT NULL,
-Monto VARCHAR (50) NOT NULL,
+Monto DECIMAL NOT NULL,
 Nombredestinatario VARCHAR (50) NOT NULL,
 IdCliente INT NOT NULL
 
 CONSTRAINT PKtblIdTarjetaRegalo PRIMARY KEY(IdTarjetaRegalo)
 )
 -- Tablas intermedias---------------------------------------------------------------------------------------------------------------------------
-
 
 
 -- Llaves foraneas--------------------------------------------------- 

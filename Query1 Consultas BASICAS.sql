@@ -23,5 +23,17 @@ ORDER BY ApellidoCliente DESC
 SELECT IdProveedor,Nombre,Telefono FROM tblProveedores
 WHERE Telefono = '2710-3713' 
 
-/* 5.Conocer el Precio menor de los articulos de la Tienda Juguetes.*/ 
-SELECT MIN(Precio) AS 'Precio menor de los Articulos de la Tienda Juguetes' FROM tblArticulos
+/* 5.Conocer las tarjetas de regalo con la misma fecha de vencimiento.ordenelos de manera ascendente*/ 
+SELECT IdTarjetaRegalo,FechaVencimiento,Monto FROM tblTarjetaRegalo
+WHERE FechaVencimiento = '01/2023'
+ORDER BY IdTarjetaRegalo ASC
+
+/* 6.Saber los articulos de un proveedor en específico, ordenados alfabeticamente.*/
+SELECT NombreArt,Codigo,Precio FROM tblArticulos
+WHERE IdProveedor=8
+ORDER BY NombreArt ASC
+
+/* 7.Saber los articulos de un tipo en específico, ordenando su precio de mayor a menor.*/
+SELECT NombreArt,Precio,IdTipo AS 'IdTipo: Juguetes Deportivos' FROM tblArticulos
+WHERE IdTipo=5
+ORDER BY Precio DESC
