@@ -1,3 +1,9 @@
+/*
+Base de Datos I Proyecto Tienda de Juguetes.
+Integrantes:LEANDRO VARGAS VALVERDE.
+db_TiendaJuguetes
+*/
+
 --CREATE DATABASE db_TiendaJuguetes
 
 USE db_TiendaJuguetes
@@ -22,7 +28,7 @@ IdArticulo INT NOT NULL,
 NombreArt VARCHAR(100) NOT NULL,
 Codigo VARCHAR(50) NOT NULL, 
 Descripcion VARCHAR(MAX) NOT NULL,
-Precio VARCHAR(200) NOT NULL,
+Precio DECIMAL NOT NULL,
 IdProveedor INT NOT NULL,
 IdTipo INT NOT NULL
 
@@ -58,9 +64,9 @@ Mes VARCHAR(50) NOT NULL,
 Año VARCHAR(50) NOT NULL,
 Codigo VARCHAR(50) NOT NULL,
 IdCliente INT NOT NULL,
-TotalBruto VARCHAR (200) NOT NULL,
-Impuesto VARCHAR (200) NOT NULL,
-TotalNeto VARCHAR (200) NOT NULL
+TotalBruto DECIMAL NOT NULL,
+Impuesto DECIMAL NOT NULL,
+TotalNeto DECIMAL NOT NULL
 
 CONSTRAINT PKtblFacturas PRIMARY KEY(IdFactura),
 CONSTRAINT UNQtblFacturasCodigo UNIQUE(Codigo)

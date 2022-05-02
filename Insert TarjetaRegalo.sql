@@ -1,4 +1,9 @@
---INSERTAR DATOS A LA TABLA TARJETA REGALO
+/*
+Base de Datos I Proyecto Tienda de Juguetes.
+db_TiendaJuguetes
+INSERTAR DATOS A LA TABLA TARJETA REGALO
+*/
+
 USE db_TiendaJuguetes
 GO
 

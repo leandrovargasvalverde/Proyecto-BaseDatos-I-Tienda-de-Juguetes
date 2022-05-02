@@ -1,0 +1,9 @@
+Problema Prosa 1 Pagina
+Diagrama BD
+Query 1 Creacion BD, Tablas y Restricciones
+Query's N Inserts 50 Registros en las tablas principales datos reales.
+Consultas N1 Basicas 7
+Consultas N2 Faciles 10
+Consultas N3 Intermedias 10
+Consultas N4 Dificiles 10
+**** Consultas de Reto *****

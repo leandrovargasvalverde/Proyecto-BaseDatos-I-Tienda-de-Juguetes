@@ -1,4 +1,8 @@
---INSERTAR DATOS A LA TABLA ARTICULOS
+/*
+Base de Datos I Proyecto Tienda de Juguetes.
+db_TiendaJuguetes
+INSERTAR DATOS A LA TABLA ARTICULOS
+*/
 
 USE db_TiendaJuguetes
 GO

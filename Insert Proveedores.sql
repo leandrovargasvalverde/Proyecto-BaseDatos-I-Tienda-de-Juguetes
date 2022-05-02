@@ -1,4 +1,8 @@
---INSERTAR DATOS A LA TABLA PROVEEDORES
+/*
+Base de Datos I Proyecto Tienda de Juguetes.
+db_TiendaJuguetes
+INSERTAR DATOS A LA TABLA PROVEEDORES
+*/
 
 USE db_TiendaJuguetes
 GO
