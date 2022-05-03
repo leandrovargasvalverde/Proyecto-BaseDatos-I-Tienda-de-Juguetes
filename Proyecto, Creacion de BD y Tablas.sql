@@ -1,6 +1,5 @@
 /*
 Base de Datos I Proyecto Tienda de Juguetes.
-Integrantes:LEANDRO VARGAS VALVERDE.
 db_TiendaJuguetes
 */
 
@@ -9,7 +8,7 @@ db_TiendaJuguetes
 USE db_TiendaJuguetes
 GO
 
---Creaci髇 de Tabla Clientes
+--Creaci贸n de Tabla Clientes
 CREATE TABLE tblClientes(
 IdCliente INT NOT NULL,
 NombreCliente VARCHAR(100) NOT NULL,
@@ -22,7 +21,7 @@ Correo VARCHAR(200) NOT NULL
 CONSTRAINT PKtblClientes PRIMARY KEY(IdCliente)
 )
 
---Creaci髇 de Tabla Articulos
+--Creaci贸n de Tabla Articulos
 CREATE TABLE tblArticulos(
 IdArticulo INT NOT NULL,
 NombreArt VARCHAR(100) NOT NULL,
@@ -36,7 +35,7 @@ CONSTRAINT PKtblArticulos PRIMARY KEY(IdArticulo),
 CONSTRAINT UNQtblArticulosCodigo UNIQUE(Codigo)
 )
 
---Creaci髇 de Tabla Proveedores
+--Creaci贸n de Tabla Proveedores
 CREATE TABLE tblProveedores(
 IdProveedor INT NOT NULL,
 Nombre VARCHAR(100) NOT NULL,
@@ -49,7 +48,7 @@ CONSTRAINT PKtblIdProveedores PRIMARY KEY(IdProveedor),
 CONSTRAINT UNQtblProveedoresCodigo UNIQUE(CedulaJuridica)
 )
 
---Creaci髇 de Tabla Tipos
+--Creaci贸n de Tabla Tipos
 CREATE TABLE tblTipos(
 IdTipo INT NOT NULL,
 Nombre VARCHAR(100) NOT NULL
@@ -61,7 +60,7 @@ CONSTRAINT PKtblTipos PRIMARY KEY(IdTipo)
 CREATE TABLE tblFacturas(
 IdFactura INT NOT NULL,
 Mes VARCHAR(50) NOT NULL,
-A駉 VARCHAR(50) NOT NULL,
+A帽o VARCHAR(50) NOT NULL,
 Codigo VARCHAR(50) NOT NULL,
 IdCliente INT NOT NULL,
 TotalBruto DECIMAL NOT NULL,
@@ -82,7 +81,7 @@ IdCliente INT NOT NULL
 
 CONSTRAINT PKtblIdTarjetaRegalo PRIMARY KEY(IdTarjetaRegalo)
 )
--- Tablas intermedias---------------------------------------------------------------------------------------------------------------------------
+
 
 
 -- Llaves foraneas--------------------------------------------------- 
