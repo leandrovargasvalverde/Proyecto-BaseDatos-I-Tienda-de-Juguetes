@@ -2,8 +2,8 @@
 Base de Datos I Proyecto Tienda de Juguetes.
 Integrantes: Leandro Valverde 
              Ana Solis
-	     Jesus de la Fuente
-	     Sebastian Moreno 
+			 Jesus de la Fuente
+			 Sebastian Moreno 
 db_TiendaJuguetes
 CONSULTAS INTERMEDIAS
 */
@@ -48,7 +48,7 @@ ORDER BY (TotalNeto) DESC
 
 -- 7.Saber las Facturas con un TotalBruto mayor a 50000 y un TotalNeto menor a 100000 en el mes de Marzo, ordénelos de menor a mayor.
 SELECT Codigo,Mes,TotalNeto FROM tblFacturas
-WHERE (TotalBruto > 50000 AND TotalNeto < 100000) AND (Mes='03')
+WHERE (TotalBruto > 50000 AND TotalNeto < 100000) AND (Mes=03)
 ORDER BY (TotalBruto) ASC
 
 -- 8.Saber las Facturas que se realizaron entre los meses de Marzo y Diciembre pero no las que se realizaron entre Mayo y Agosto, ordénelos de menor a mayor los meses.
