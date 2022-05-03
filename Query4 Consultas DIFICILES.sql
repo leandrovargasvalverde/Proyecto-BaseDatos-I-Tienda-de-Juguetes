@@ -29,7 +29,8 @@ SELECT IdFactura, Codigo, TotalBruto, TotalNeto FROM tblFacturas
 WHERE TotalNeto > (SELECT AVG(TotalBruto) FROM tblFacturas)
 ORDER BY TotalNeto ASC
 
--- 5.Saber cuales facturas obtuvieron un total neto mas bajo que el promedio. ordenelos de forma descendente.
+-- 5.Saber cuales facturas obtuvieron un total neto mas bajo que el promedio Neto. ordenelos de forma descendente.
+SELECT AVG(TotalNeto) AS 'Promedio del Total Neto de las Facturas' FROM tblFacturas
 SELECT IdFactura, Codigo, TotalNeto FROM tblFacturas
 WHERE TotalNeto < (SELECT AVG(TotalNeto) FROM tblFacturas)
 ORDER BY TotalBruto DESC
