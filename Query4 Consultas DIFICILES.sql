@@ -51,10 +51,10 @@ WHERE Precio > (SELECT AVG(Precio) FROM tblArticulos)
 GROUP BY IdProveedor
 ORDER BY SUM(Precio) ASC
 
---8. Saber las facturas realizadas por un total entre 10 000 y 500 000 pero no las que fueron por 100 000 y 150 000 ni tampoco entre 200 000 y 250 000, ordénelos de mayor a menor
-SELECT IdFactura,Codigo,Mes,Año,TotalNeto FROM tblFacturas
-WHERE (TotalBruto BETWEEN 10000 AND 300000) AND NOT 
-(TotalBruto BETWEEN 100000 AND 150000) AND NOT 
+--8. Saber las facturas realizadas por un totalBruto entre 10 000 y 500 000 pero no las que fueron por 100 000 y 150 000 ni tampoco entre 200 000 y 250 000, ordénelos de mayor a menor
+SELECT IdFactura,Codigo,Mes,Año,TotalBruto FROM tblFacturas
+WHERE (TotalBruto BETWEEN 10000 AND 500000) AND NOT 
+(TotalBruto BETWEEN 100000 AND 150000) AND NOT
 (TotalBruto BETWEEN 200000 AND 250000)
 ORDER BY (TotalBruto) DESC
 
