@@ -1,5 +1,9 @@
 /*
 Base de Datos I Proyecto Tienda de Juguetes.
+Integrantes: Leandro Valverde 
+             Ana Solis
+	           Jesus de la Fuente
+	           Sebastian Moreno 
 db_TiendaJuguetes
 CONSULTAS BASICAS
 */
@@ -28,12 +32,12 @@ SELECT IdTarjetaRegalo,FechaVencimiento,Monto FROM tblTarjetaRegalo
 WHERE FechaVencimiento = '01/2023'
 ORDER BY IdTarjetaRegalo ASC
 
--- 6.Saber los articulos de un proveedor en específico, ordenados alfabeticamente.
+-- 6.Saber los articulos de un proveedor en especÃ­fico, ordenados alfabeticamente.
 SELECT NombreArt,Codigo,Precio FROM tblArticulos
 WHERE IdProveedor=8
 ORDER BY NombreArt ASC
 
--- 7.Saber los articulos de un tipo en específico, ordenando su precio de mayor a menor.
+-- 7.Saber los articulos de un tipo en especÃ­fico, ordenando su precio de mayor a menor.
 SELECT NombreArt,Precio,IdTipo AS 'IdTipo: Juguetes Deportivos' FROM tblArticulos
 WHERE IdTipo=5
 ORDER BY Precio DESC
