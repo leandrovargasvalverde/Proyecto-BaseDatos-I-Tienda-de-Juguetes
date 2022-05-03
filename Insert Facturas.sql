@@ -1,5 +1,9 @@
 ﻿/*
 Base de Datos I Proyecto Tienda de Juguetes.
+Integrantes: Leandro Valverde 
+             Ana Solis
+	           Jesus de la Fuente
+	           Sebastian Moreno 
 db_TiendaJuguetes
 INSERTAR DATOS A LA TABLA FACTURAS
 */
