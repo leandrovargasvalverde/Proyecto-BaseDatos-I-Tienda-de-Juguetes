@@ -7,14 +7,7 @@ CONSULTAS DIFICILES
 USE db_TiendaJuguetes
 GO
 
---1. Saber las Facturas que se generaron los meses Diciembre y Noviembre o Setiembre o Julio. Ordenarlos segun su IdFactura de forma descendente 
 
-SELECT IdFactura,Año,Mes,TotalNeto FROM tblFacturas
-WHERE Mes LIKE '12%' OR
-Mes LIKE '11%' OR
-Mes LIKE '09%' OR
-Mes LIKE '07%'
-ORDER BY IdFactura DESC
 
 
 --2.Saber cuales facturas obtuvieron un total bruto mas bajo que el promedio del total bruto de las facturas. ordenelos de forma descendente.
