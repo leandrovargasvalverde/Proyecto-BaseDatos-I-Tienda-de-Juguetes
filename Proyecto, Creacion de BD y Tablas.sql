@@ -82,7 +82,15 @@ IdCliente INT NOT NULL
 CONSTRAINT PKtblIdTarjetaRegalo PRIMARY KEY(IdTarjetaRegalo)
 )
 
+-- Tabla Intermedia --------------------------------------------------- 
 
+CREATE TABLE tblArticulosXFacturas(
+IdArticulo INT NOT NULL,
+IdFactura INT NOT NULL,
+CantArticulos INT NOT NULL
+
+CONSTRAINT PKtblArticulosXFacturas PRIMARY KEY(IdArticulo,IdFactura)
+)
 
 -- Llaves foraneas--------------------------------------------------- 
 
@@ -101,3 +109,11 @@ FOREIGN KEY (IdCliente) REFERENCES tblClientes(IdCliente)
 ALTER TABLE tblTarjetaRegalo
 ADD CONSTRAINT FKeyIdCliente
 FOREIGN KEY (IdCliente) REFERENCES tblClientes(IdCliente)
+
+ALTER TABLE tblArticulosXFacturas
+ADD CONSTRAINT FKIdArticulo
+FOREIGN KEY(IdArticulo) REFERENCES tblArticulos(IdArticulo)
+
+ALTER TABLE tblArticulosXFacturas
+ADD CONSTRAINT FKIdFactura
+FOREIGN KEY(IdFactura) REFERENCES tblFacturas(IdFactura)

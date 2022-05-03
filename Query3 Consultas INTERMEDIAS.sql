@@ -8,7 +8,6 @@ USE db_TiendaJuguetes
 GO
 
 --1. Saber las Facturas que se generaron los meses Diciembre y Noviembre o Setiembre o Julio. Ordenarlos segun su IdFactura de forma descendente 
-
 SELECT IdFactura,Año,Mes,TotalNeto FROM tblFacturas
 WHERE Mes LIKE '12%' OR
 Mes LIKE '11%' OR
@@ -60,19 +59,8 @@ WHERE (Precio > 5000 AND Precio < 20000 OR Precio >= 25000 AND Precio <= 40000) 
 (Precio >= 10000 AND Precio <= 15000)
 ORDER BY (Precio) ASC
 
-/* 9.Cuente y agrupe primeros 25 Clientes que poseen una misma Direccion.*/
-SELECT COUNT(NombreCliente) AS 'CANTIDAD DE CLIENTES EN ESA DIRECCION', 
-Direccion FROM tblClientes
-WHERE IdCliente BETWEEN 01 AND 25
-GROUP BY Direccion
-
-/* 10.Saber las Facturas entre 50000 y 150000 pero no entre 80000 y 120000. ordene su precio de mayor a menor*/
-SELECT Codigo,Mes,TotalNeto FROM tblFacturas
-WHERE (TotalNeto BETWEEN 50000 AND 300000) AND NOT (TotalNeto BETWEEN 100000 AND 200000)
-ORDER BY (TotalNeto) DESC
-
 /* 10.Consultar los Targetas de Regalo en las que su monto es mayor al monto promedio de las Targetas de Regalo. ordene su precio de menor a mayor*/
-SELECT AVG(Monto) AS'Monto Promedio de las Targetas de Regalo' FROM tblTarjetaRegalo
+SELECT AVG(Monto) AS 'Monto Promedio de las Targetas de Regalo' FROM tblTarjetaRegalo
 SELECT IdTarjetaRegalo,Monto FROM tblTarjetaRegalo
 WHERE Monto > (SELECT AVG(Monto) FROM tblTarjetaRegalo)
 ORDER BY (Monto) DESC
