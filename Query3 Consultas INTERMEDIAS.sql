@@ -4,6 +4,9 @@ db_TiendaJuguetes
 CONSULTAS INTERMEDIAS
 */
 
+USE db_TiendaJuguetes
+GO
+
 -- 1.Conocer los precios de los articulos donde esten entre 20000 y 30000 o 35000 y 45000
 SELECT IdArticulo, NombreArt, Precio FROM tblArticulos
 WHERE (Precio BETWEEN 20000 AND 30000) OR
