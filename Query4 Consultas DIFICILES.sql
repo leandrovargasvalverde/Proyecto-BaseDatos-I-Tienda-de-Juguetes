@@ -7,7 +7,11 @@ CONSULTAS DIFICILES
 USE db_TiendaJuguetes
 GO
 
-
+/* 1.Saber las Facturas las cuales el TotalNeto sea menor al promedio del TotalBruto de la Facturas. ordene su precio de mayor a menor*/
+SELECT AVG(TotalBruto) AS 'Promedio del Total Bruto de las Facturas' FROM tblFacturas
+SELECT Codigo,TotalBruto,TotalNeto FROM tblFacturas
+WHERE TotalNeto < (SELECT AVG(TotalBruto) FROM tblFacturas)
+ORDER BY (TotalNeto) DESC
 
 
 --2.Saber cuales facturas obtuvieron un total bruto mas bajo que el promedio del total bruto de las facturas. ordenelos de forma descendente.
