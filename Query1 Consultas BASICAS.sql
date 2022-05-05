@@ -29,7 +29,7 @@ WHERE Telefono = '2710-3713'
 
 -- 5.Conocer las tarjetas de regalo con la misma fecha de vencimiento.ordenelos de manera Ascendente.
 SELECT IdTarjetaRegalo,FechaVencimiento,Monto FROM tblTarjetaRegalo
-WHERE FechaVencimiento = '01/2023'
+WHERE FechaVencimiento = '01/2022'
 ORDER BY IdTarjetaRegalo ASC
 
 -- 6.Saber los articulos de un proveedor en específico, ordenados alfabeticamente.
