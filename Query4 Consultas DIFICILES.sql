@@ -46,7 +46,7 @@ ORDER BY TotalNeto ASC
 SELECT AVG(TotalNeto) AS 'Promedio del Total Neto de las Facturas' FROM tblFacturas
 SELECT IdFactura, Codigo, TotalNeto FROM tblFacturas
 WHERE TotalNeto < (SELECT AVG(TotalNeto) FROM tblFacturas)
-ORDER BY TotalBruto DESC
+ORDER BY TotalNeto DESC
 
 -- 7. Sumar y Agrupar los Articulos por Proveedor tomando en cuenta que su Precio es mayor que el promedio de los Articulos, ordénelos de menor a mayor.
 SELECT AVG(Precio) FROM tblArticulos
