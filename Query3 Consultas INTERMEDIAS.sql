@@ -47,7 +47,7 @@ WHERE TotalNeto < (SELECT MAX(TotalBruto) FROM tblFacturas)
 ORDER BY (TotalNeto) DESC
 
 -- 7.Saber las Facturas con un TotalBruto mayor a 50000 y un TotalNeto menor a 100000 en el mes de Marzo, ordénelos de menor a mayor.
-SELECT Codigo,Mes,TotalNeto FROM tblFacturas
+SELECT Codigo,Mes,TotalBruto,TotalNeto FROM tblFacturas
 WHERE (TotalBruto > 50000 AND TotalNeto < 100000) AND (Mes=03)
 ORDER BY (TotalBruto) ASC
 
