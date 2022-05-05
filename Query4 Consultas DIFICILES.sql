@@ -71,6 +71,6 @@ GROUP BY Direccion
 /* 10. Saber cuáles articulos tienen un precio de 15% más alto que el producto más barato y cuáles productos 
        donde su precio es un 25% más económico que el producto más caro, ordénelos de mayor a menor. */
 SELECT IdArticulo,Codigo,NombreArt,Precio FROM tblArticulos
-WHERE Precio > (SELECT MIN(Precio) AS 'Producto con Menor Precio' FROM tblArticulos) + (SELECT MIN((Precio)*0.15) AS '10% Precio Menor' FROM tblArticulos) AND
-Precio < (SELECT MAX(Precio) AS 'Producto con Mayor Precio' FROM tblArticulos) - (SELECT MAX((Precio)*0.25) AS '20% Precio Mayor' FROM tblArticulos)
+WHERE Precio > (SELECT MIN(Precio) AS 'Producto con Menor Precio' FROM tblArticulos) + (SELECT MIN((Precio)*0.15) FROM tblArticulos) AND
+Precio < (SELECT MAX(Precio) AS 'Producto con Mayor Precio' FROM tblArticulos) - (SELECT MAX((Precio)*0.25)  FROM tblArticulos)
 ORDER BY (Precio) DESC
